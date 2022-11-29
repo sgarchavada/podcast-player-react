@@ -166,12 +166,12 @@ const Main = () => {
               <Replay10Icon
                 onClick={onBackwardAudio}
                 color="secondary"
-                sx={{ fontSize: "40px", ml: 2 }}
+                sx={{ fontSize: "40px", ml: 2, cursor: 'pointer' }}
               />
               <Forward30Icon
                 onClick={onForwardAudio}
                 color="secondary"
-                sx={{ fontSize: "40px", ml: 1 }}
+                sx={{ fontSize: "40px", ml: 1, cursor: 'pointer' }}
               />
               <VolumeBox>
                 {isMuted ? (
