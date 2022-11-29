@@ -95,7 +95,6 @@ const Main = () => {
   );
 
   const onSliderChange = (event: Event, newValue: number | number[]) => {
-    console.log('88 ===>', newValue)
     setSliderValue(newValue);
     if (playerRef?.current?.audio?.current) {
       playerRef.current.audio.current.currentTime = newValue as number * totalTime / 100;
@@ -143,7 +142,7 @@ const Main = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <Box width="100%" display="flex" alignItems='center'>
+        <Box width="100%" display="flex" alignItems='center' justifyContent='center'>
           <Button onClick={onTogglePlay}>
             {isPlaying ? (
               <PauseCircleIcon sx={{ fontSize: 70 }} />
